@@ -1,9 +1,12 @@
 import './App.css';
+import PrimaryButton from './components/Buttons/PrimaryButton';
 
 function App() {
 	return (
-		<div className='flex min-h-screen items-center justify-center'>
-			<h1 className='text-7xl'>Hello World!</h1>
+		<div className='flex flex-col min-h-screen items-center justify-center'>
+			<PrimaryButton onClick={() => alert('You clicked me!')}>
+				Click Me
+			</PrimaryButton>
 		</div>
 	);
 }
